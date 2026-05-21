@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Theta ROI</title>
+  <meta name="description" content="Calculate your real ROI instantly" />
+  <meta property="og:title" content="Theta ROI" />
+  <meta property="og:description" content="Calculate your real ROI instantly" />
+  <meta property="og:image" content="cover.jpg" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="cover.jpg" type="image/jpeg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <section class="hero-card">
+      <div class="hero-copy">
+        <div class="brand-block">
+          <div class="brand-mark">
+            <img class="brand-logo" src="logo.jpg" alt="Minaj Enterprises logo" />
+            <div class="brand-copy">
+              <span class="brand-name">Minaj Enterprises</span>
+              <span class="brand-tag">A project of Minaj Enterprises</span>
+            </div>
+          </div>
+          <span class="eyebrow">Fintech Calculator · ThetaSync</span>
+        </div>
+        <h1>Theta ROI</h1>
+        <p>
+          Calculate your real ROI instantly
+        </p>
+      </div>
+
+      <div class="calculator-grid">
+        <div class="input-panel glass-panel">
+          <div class="field-group">
+            <label for="originalAmount">Original Amount</label>
+            <input id="originalAmount" name="originalAmount" type="text" inputmode="decimal" autocomplete="off" placeholder="Enter original amount" />
+          </div>
+
+          <div class="field-group">
+            <label for="subtractedAmount">Subtracted Amount</label>
+            <input id="subtractedAmount" name="subtractedAmount" type="text" inputmode="decimal" autocomplete="off" placeholder="Enter subtracted amount" />
+          </div>
+
+          <div class="helper-row" aria-live="polite">
+            <span id="validationMessage" class="validation-message">Enter values to begin.</span>
+          </div>
+
+          <div class="action-row">
+            <button id="copyButton" class="secondary-button" type="button">Copy Result</button>
+            <button id="resetButton" class="primary-button" type="button">Reset</button>
+          </div>
+        </div>
+
+        <div class="result-panel">
+          <article class="result-card glow-card">
+            <span class="result-label">Remaining Amount</span>
+            <div id="remainingAmount" class="result-value">0.00</div>
+          </article>
+
+          <article class="result-card accent-card glow-card">
+            <span class="result-label">Recovery Percentage</span>
+            <div id="recoveryPercentage" class="result-value">0.00%</div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
